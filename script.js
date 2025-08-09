@@ -328,7 +328,7 @@ const projectsData = [
     {
         id: 1,
         title: 'Neighbor Management System (NMS)',
-        description: 'A comprehensive web application for managing neighborhood communities with features for resident management, announcements, and communication.',
+        description: 'A comprehensive web application for managing neighborhood communities .',
         image: 'project1.jpg',
         technologies: ['Java', 'Spring Boot', 'HTML', 'CSS', 'MySQL'],
         category: 'web',
@@ -337,24 +337,65 @@ const projectsData = [
     },
     {
         id: 2,
-        title: 'Secure User System',
-        description: 'A secure user authentication and management system with robust security features, user roles, and access control.',
+        title: 'To-Let-Management-System',
+        description: 'A web application for managing to-let for house rent',
         image: 'project2.jpg',
         technologies: ['PHP', 'HTML', 'CSS', 'MySQL'],
-        category: 'backend',
+        category: 'web',
+        github: 'https://github.com/tasminoni/To-Let-Management-System',
+        demo: 'https://github.com/tasminoni/To-Let-Management-System'
+    },
+    {
+        id: 3,
+        title: 'Secure User System',
+        description: 'A secure user authentication and management system with robust security features.',
+        image: 'project2.jpg',
+        technologies: ['PHP', 'HTML', 'CSS', 'MySQL'],
+        category: 'web',
         github: 'https://github.com/tasminoni/Secure-User-System',
         demo: 'https://github.com/tasminoni/Secure-User-System'
     },
 
     {
-        id: 3,
-        title: 'Web Development Portfolio',
-        description: 'A responsive portfolio website showcasing web development skills with modern design and interactive features.',
+        id: 4,
+        title: '3D-Tower-Defense-Game',
+        description: '3D Tower Defense Game with openGL',
         image: 'project5.jpg',
-        technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
-        category: 'web',
-        github: 'https://github.com/tasminoni',
-        demo: 'https://github.com/tasminoni'
+        technologies: ['OpenGl'],
+        category: 'Game',
+        github: 'https://github.com/tasminoni/3D-Tower-Defense-Game',
+        demo: 'https://github.com/tasminoni/3D-Tower-Defense-Game'
+    },
+
+    {
+        id: 5,
+        title: 'Weather-type-prediction',
+        description: 'ML model to predict weather type',
+        image: 'project5.jpg',
+        technologies: ['ML', 'Python'],
+        category: 'ml/ai',
+        github: 'https://github.com/tasminoni/Weather-type-prediction',
+        demo: 'https://github.com/tasminoni/Weather-type-prediction'
+    },
+    {
+        id: 6,
+        title: 'Machine-Learning-Projects',
+        description: 'ML projects',
+        image: 'project5.jpg',
+        technologies: ['ML', 'Python'],
+        category: 'ml/ai',
+        github: 'https://github.com/tasminoni/Machine-Learning-Projects',
+        demo: 'https://github.com/tasminoni/Machine-Learning-Projects'
+    },
+    {
+        id: 7,
+        title: 'RFID Based Automated Toll Collection System',
+        description: 'EEE project',
+        image: 'project5.jpg',
+        technologies: ['Arduino', 'RFID', 'ESP32'],
+        category: 'others',
+        github: '',
+        demo: 'https://www.youtube.com/watch?v=RaxV_tCrVXI'
     },
 ];
 
