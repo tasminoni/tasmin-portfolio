@@ -185,7 +185,7 @@ function initializeCodeAnimation() {
         '  location: "Dhaka, Bangladesh",',
         '  passionate: true,',
         '  hireable: true,',
-        '  contact: "tasminahmedoni909@gmail.com" => {',
+        '  contact: () => {',
         '    return "Let\'s build something amazing!";',
         '  }',
         '};',
