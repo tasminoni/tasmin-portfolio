@@ -758,6 +758,50 @@ if (window.innerWidth > 768) {
     initializeCursorEffect();
 }
 
+// Certification Modal Functions
+function openCertificationModal(certId) {
+    const modal = document.getElementById('certification-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalImage = document.getElementById('modal-image');
+    
+    // Certificate data
+    const certificates = {
+        'ysse-cert': {
+            title: 'Business Development Internship Certificate',
+            image: 'certificates/ysse.png' // You'll need to add this image
+        }
+    };
+    
+    if (certificates[certId]) {
+        modalTitle.textContent = certificates[certId].title;
+        modalImage.src = certificates[certId].image;
+        modalImage.alt = certificates[certId].title;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeCertificationModal() {
+    const modal = document.getElementById('certification-modal');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('certification-modal');
+    if (event.target === modal) {
+        closeCertificationModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeCertificationModal();
+    }
+});
+
 // Console message for fellow developers
 console.log(`
 🚀 Welcome to Tasmin Ahmed Oni's Portfolio!

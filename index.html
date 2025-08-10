@@ -66,6 +66,10 @@
                     <i class="fas fa-briefcase"></i>
                     <span>Experience</span>
                 </a>
+                <a href="#certifications" class="nav-link" data-section="certifications">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certifications</span>
+                </a>
                 <a href="#contact" class="nav-link" data-section="contact">
                     <i class="fas fa-envelope"></i>
                     <span>Contact</span>
@@ -563,12 +567,67 @@
         </div>
     </section>
 
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="section-number">06.</span>
+                    Certifications
+                </h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="certifications-content">
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <div class="certification-image">
+                            <div class="certification-overlay">
+                                <button class="view-cert-btn" onclick="openCertificationModal('ysse-cert')">
+                                    <i class="fas fa-eye"></i>
+                                    <span>View Certificate</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="certification-content">
+                            <h3 class="certification-title">Business Development Internship</h3>
+                            <p class="certification-issuer">Youth School for Social Entrepreneurs (YSSE)</p>
+                            <p class="certification-date">May 2024</p>
+                            <p class="certification-description">
+                                Completed a comprehensive virtual internship program focused on business development 
+                                and social entrepreneurship, gaining valuable experience in project management and strategic planning.
+                            </p>
+                            <div class="certification-skills">
+                                <span class="skill-tag">Business Development</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Strategic Planning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Modal -->
+    <div id="certification-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCertificationModal()">&times;</span>
+            <div class="modal-header">
+                <h3 id="modal-title">Certificate</h3>
+            </div>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Certificate" class="certificate-image">
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
-                    <span class="section-number">06.</span>
+                    <span class="section-number">07.</span>
                     Let's Connect
                 </h2>
                 <div class="section-line"></div>
