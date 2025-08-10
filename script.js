@@ -25,7 +25,6 @@ function initializePortfolio() {
     initializeSkillBars();
     initializeStatCounters();
     initializeProjectsFilter();
-    initializeContactForm();
     initializeThemeToggle();
     initializeLoadingScreen();
     
@@ -459,6 +458,9 @@ function filterProjects(filter) {
 function initializeContactForm() {
     const contactForm = document.getElementById('contact-form');
     
+    // Only initialize if contact form exists
+    if (!contactForm) return;
+    
     contactForm.addEventListener('submit', handleFormSubmission);
     
     // Add form field animations
@@ -567,6 +569,9 @@ function showNotification(message, type = 'info') {
 function initializeThemeToggle() {
     const themeToggle = document.getElementById('theme-toggle');
     
+    // Only initialize if theme toggle button exists
+    if (!themeToggle) return;
+    
     themeToggle.addEventListener('click', () => {
         currentTheme = currentTheme === 'light' ? 'dark' : 'light';
         setTheme(currentTheme);
@@ -577,6 +582,10 @@ function initializeThemeToggle() {
 function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     const themeToggle = document.getElementById('theme-toggle');
+    
+    // Only update icon if theme toggle button exists
+    if (!themeToggle) return;
+    
     const icon = themeToggle.querySelector('i');
     
     if (theme === 'dark') {
