@@ -346,7 +346,7 @@ const projectsData = [
     },
     {
         id: 3,
-        title: 'To-Let-Management-System',
+        title: 'To Let Management System',
         description: 'A web application for managing to-let for house rent',
         image: 'project2.jpg',
         technologies: ['PHP', 'HTML', 'CSS', 'MySQL'],
