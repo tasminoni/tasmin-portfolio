@@ -336,7 +336,7 @@ const projectsData = [
     },
     {
         id: 2,
-        title: 'Neighbor Management System (NMS)',
+        title: 'Neighbor Management System',
         description: 'A comprehensive web application for managing neighborhood communities .',
         image: 'project1.jpg',
         technologies: ['Java', 'Spring Boot', 'HTML', 'CSS', 'MySQL'],
