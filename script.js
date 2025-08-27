@@ -326,68 +326,88 @@ function initializeProjectsFilter() {
 const projectsData = [
     {
         id: 1,
+        title: 'Academic Thesis Portal',
+        description: 'A web-based platform designed to manage the entire thesis process from student registration and supervisor selection to thesis submission, evaluation, and communication. It streamlines workflows for students, teachers, and administrators.',
+        image: 'project1.jpg',
+        technologies: ['React', 'Node JS', 'MongoDB', 'CSS'],
+        category: 'web',
+        github: 'https://github.com/tasminoni/Academic-Thesis-Portal',
+        demo: 'https://academic-thesis-portal.vercel.app/'
+    },
+    {
+        id: 2,
         title: 'Neighbor Management System (NMS)',
         description: 'A comprehensive web application for managing neighborhood communities .',
         image: 'project1.jpg',
         technologies: ['Java', 'Spring Boot', 'HTML', 'CSS', 'MySQL'],
         category: 'web',
         github: 'https://github.com/tasminoni/Neighbor-Management-System',
-        demo: 'https://github.com/tasminoni/Neighbor-Management-System'
+        demo: 'notdeployed.html'
     },
     {
-        id: 2,
+        id: 3,
         title: 'To-Let-Management-System',
         description: 'A web application for managing to-let for house rent',
         image: 'project2.jpg',
         technologies: ['PHP', 'HTML', 'CSS', 'MySQL'],
         category: 'web',
         github: 'https://github.com/tasminoni/To-Let-Management-System',
-        demo: 'https://github.com/tasminoni/To-Let-Management-System'
+        demo: 'notdeployed.html'
     },
     {
-        id: 3,
+        id: 4,
+        title: 'Whatsapp Clone',
+        description: 'A web application for managing whatsapp messages',
+        image: 'project2.jpg',
+        technologies: ['React', 'Node JS', 'MongoDB', 'CSS'],
+        category: 'web',
+        github: 'https://github.com/tasminoni/Whatsapp-Clone',
+        demo: 'notdeployed.html'
+    },
+    {
+        id: 5,
         title: 'Secure User System',
         description: 'A secure user authentication and management system with robust security features.',
         image: 'project2.jpg',
         technologies: ['PHP', 'HTML', 'CSS', 'MySQL'],
         category: 'web',
         github: 'https://github.com/tasminoni/Secure-User-System',
-        demo: 'https://github.com/tasminoni/Secure-User-System'
+        demo: 'notdeployed.html'
     },
 
     {
-        id: 4,
+        id: 6,
         title: '3D-Tower-Defense-Game',
         description: '3D Tower Defense Game with openGL',
         image: 'project5.jpg',
         technologies: ['OpenGl'],
         category: 'Game',
         github: 'https://github.com/tasminoni/3D-Tower-Defense-Game',
-        demo: 'https://github.com/tasminoni/3D-Tower-Defense-Game'
+        demo: 'notdeployed.html'
     },
 
     {
-        id: 5,
+        id: 7,
         title: 'Weather-type-prediction',
         description: 'ML model to predict weather type',
         image: 'project5.jpg',
         technologies: ['ML', 'Python'],
         category: 'ml/ai',
         github: 'https://github.com/tasminoni/Weather-type-prediction',
-        demo: 'https://github.com/tasminoni/Weather-type-prediction'
+        demo: 'notdeployed.html'
     },
     {
-        id: 6,
+        id: 8,
         title: 'Machine-Learning-Projects',
         description: 'ML projects',
         image: 'project5.jpg',
         technologies: ['ML', 'Python'],
         category: 'ml/ai',
         github: 'https://github.com/tasminoni/Machine-Learning-Projects',
-        demo: 'https://github.com/tasminoni/Machine-Learning-Projects'
+        demo: 'notdeployed.html'
     },
     {
-        id: 7,
+        id: 9,
         title: 'RFID Based Automated Toll Collection System',
         description: 'EEE project',
         image: 'project5.jpg',
@@ -396,6 +416,16 @@ const projectsData = [
         github: '',
         demo: 'https://www.youtube.com/watch?v=RaxV_tCrVXI'
     },
+    {
+        id: 10,
+        title: 'Smart Guardian Helmet',
+        description: 'Computer interface course project',
+        image: 'project1.jpg',
+        technologies: ['C++', 'Arduino', 'Sensors', 'Wireless Communication'],
+        category: 'others',
+        github: 'https://github.com/tasminoni/Smart-Guardian-Helmet-An-Intelligent-Safety-System-for-Riders',
+        demo: 'notdeployed.html'
+    }
 ];
 
 function loadProjects() {
