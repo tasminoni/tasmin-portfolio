@@ -426,6 +426,16 @@ const projectsData = [
         github: 'https://github.com/tasminoni/Smart-Guardian-Helmet-An-Intelligent-Safety-System-for-Riders',
         demo: 'notdeployed.html'
     }
+    {
+        id: 11,
+        title: 'Shiritori Game',
+        description: 'A simple Shiritori Game',
+        image: 'project1.jpg',
+        technologies: ['React','HTML','CSS'],
+        category: 'game',
+        github: 'https://github.com/tasminoni/Shiritori-Game',
+        demo: 'https://shiritori-game-ruby.vercel.app/'
+    }
 ];
 
 function loadProjects() {
