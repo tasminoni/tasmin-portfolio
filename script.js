@@ -425,7 +425,7 @@ const projectsData = [
         category: 'others',
         github: 'https://github.com/tasminoni/Smart-Guardian-Helmet-An-Intelligent-Safety-System-for-Riders',
         demo: 'notdeployed.html'
-    }
+    },
     {
         id: 11,
         title: 'Shiritori Game',
