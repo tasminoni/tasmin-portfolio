@@ -440,26 +440,44 @@ const projectsData = [
 
 function loadProjects() {
     const projectsGrid = document.getElementById('projects-grid');
+    if (!projectsGrid) {
+        console.error('Projects grid not found!');
+        return;
+    }
+    
+    console.log('Loading projects...', projectsData.length, 'projects found');
     projectsGrid.innerHTML = '';
     
     projectsData.forEach(project => {
         const projectCard = createProjectCard(project);
         projectsGrid.appendChild(projectCard);
+        console.log('Added project:', project.title);
     });
+    
+    console.log('Projects loaded successfully');
 }
 
 function createProjectCard(project) {
     const card = document.createElement('div');
     card.className = `project-card ${project.category}`;
+    
+    // Create GitHub link only if URL exists
+    const githubLink = project.github ? 
+        `<a href="${project.github}" target="_blank" class="project-link" title="View Code">
+            <i class="fab fa-github"></i>
+        </a>` : '';
+    
+    // Create demo link only if URL exists
+    const demoLink = project.demo ? 
+        `<a href="${project.demo}" target="_blank" class="project-link" title="Live Demo">
+            <i class="fas fa-external-link-alt"></i>
+        </a>` : '';
+    
     card.innerHTML = `
         <div class="project-image">
             <div class="project-overlay">
-                <a href="${project.github}" target="_blank" class="project-link" title="View Code">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="${project.demo}" target="_blank" class="project-link" title="Live Demo">
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
+                ${githubLink}
+                ${demoLink}
             </div>
         </div>
         <div class="project-content">
