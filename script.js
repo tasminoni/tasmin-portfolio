@@ -432,7 +432,7 @@ const projectsData = [
         description: 'A simple Shiritori Game',
         image: 'project1.jpg',
         technologies: ['React','HTML','CSS'],
-        category: 'game',
+        category: 'Game',
         github: 'https://github.com/tasminoni/Shiritori-Game',
         demo: 'https://shiritori-game-ruby.vercel.app/'
     }
